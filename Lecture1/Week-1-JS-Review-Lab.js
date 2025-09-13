@@ -472,10 +472,9 @@ const listings = [
   },
 ];
 
-/**
- * Task-1: make a variable named listing0 and assign the first listing object
- * from the array above
- */
+//Task-1: //make a variable named listing0 and assign the first listing object
+ //from the array above
+ //
 //WRITE YOUR CODE BELOW
 const listing0 = listings[0];
 /**
@@ -541,3 +540,5 @@ const newBuiltListings = listings.filter((house) =>
   house.propertySummary.builtIn >= 1990
 );
 console.log(newBuiltListings);
+
+
