@@ -524,8 +524,12 @@ console.log(realtorFees(listings[6]));
  */
 //WRITE YOUR CODE BELOW
 const listingAscendingly = listings
-  .slice()
-  .sort((a, b) => a.price - b.price); 
+  .slice() 
+  .sort((a, b) => {
+    const priceA = Number(a.price.replace(/[$,]/g, ""));
+    const priceB = Number(b.price.replace(/[$,]/g, ""));
+    return priceA - priceB; 
+  });
 
 console.log(listingAscendingly);
 /**
