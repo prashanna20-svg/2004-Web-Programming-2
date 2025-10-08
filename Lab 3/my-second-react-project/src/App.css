@@ -1,0 +1,41 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.ColorBox {
+    
+  width: 50px;
+height: 50px;
+border: none;
+}
+
+ .ColorBoxesContainer {
+   
+      display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+width: 250px;
+height: 250px;
+border: 5px solid #111;
+margin: 20px auto;
+box-shadow: 0 0 10px #111;
+} 
+
+@media screen and (max-width: 500px) {
+    .ColorBox {
+        font-size: 0.5em;
+    }
+    .ColorBoxesContainer {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+}
